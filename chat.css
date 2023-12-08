@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: url(background.jpg) no-repeat;
+    background-color: rgb(22, 41, 56);
+    background-size: cover;
+
+    min-height: 100vh;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+}
+
+.navigation{
+    display: flex;
+    /* justify-content: end; */
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+.navigation a{
+    position: relative;
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.navigation a::after{
+    content: '';
+    background-color: #f4f4f4;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+container_{
+    width: 800px;
+    height: 600px;
+    padding: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
+
+.profile-area{
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.chat-area{
+    height: 70%;
+}
+
+.input-area{
+    height: 15%;
+}
+
+/* .profile-image-area{} */
+
+.profile-image{
+    display: flex;
+    background: url(perfil.jpg) no-repeat;
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.4);
+}
+
+.profile-name-area{
+    padding: 5px 10px;
+    border-radius: 10px 0 10px 0;
+    background-color: rgb(22, 41, 56);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+.profile-name{
+    color: #f4f4f4;
+    font-size: 20px;
+    font-weight: 500;
+}
+
