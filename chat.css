@@ -85,6 +85,7 @@ container_{
 
 .chat-area{
     height: 70%;
+    display: flex;
 }
 
 .input-area{
@@ -97,8 +98,8 @@ container_{
     display: flex;
     background: url(perfil.jpg) no-repeat;
     background-size: cover;
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     border-radius: 100%;
     box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.4);
 }
@@ -112,7 +113,56 @@ container_{
 
 .profile-name{
     color: #f4f4f4;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
 }
 
+.messages-area{
+    display: flex;
+    flex-direction: column;
+}
+
+mensagem_{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    margin-bottom: 10px;
+    margin-left: 65px;
+    gap: 15px;
+}
+
+.message-image{
+    display: flex;
+    background: url(perfil.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+
+    align-self: flex-start;
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+}
+
+.message-content{
+    padding: 5px 10px;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 0px 5px 5px 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    font-weight: 500;
+    align-self: flex-end;
+}
+
+.message-time{
+    position: absolute;
+    bottom: -25px;
+    right: 0px;
+    color: #f4f4f4;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 1px 3px;
+}
+
+.first{
+    margin-left: 0;
+}
