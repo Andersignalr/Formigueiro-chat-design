@@ -1,5 +1,4 @@
-
-container_{
+container_ {
     display: block;
     width: 800px;
     height: 600px;
@@ -11,7 +10,7 @@ container_{
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
 }
 
-.profile-area{
+.profile-area {
     height: 15%;
     display: flex;
     align-items: center;
@@ -19,7 +18,7 @@ container_{
     gap: 20px;
 }
 
-.chat-area{
+.chat-area {
     height: 70%;
     display: flex;
     overflow-y: auto;
@@ -27,29 +26,29 @@ container_{
 }
 
 
-.chat-area::-webkit-scrollbar-thumb{
+.chat-area::-webkit-scrollbar-thumb {
     border-radius: 10px;
 }
 
-.chat-area:hover::-webkit-scrollbar-thumb{
+.chat-area:hover::-webkit-scrollbar-thumb {
     background-color: rgb(22, 41, 56);
 }
 
 
-.chat-area::-webkit-scrollbar-track{
+.chat-area::-webkit-scrollbar-track {
     border-radius: 10px;
 }
 
-.chat-area:hover::-webkit-scrollbar-track{
+.chat-area:hover::-webkit-scrollbar-track {
     background-color: rgba(22, 41, 56, 0.4);
 }
 
 
-.chat-area::-webkit-scrollbar{
+.chat-area::-webkit-scrollbar {
     width: 6px;
 }
 
-.input-area{
+.input-area {
     height: 15%;
     padding-bottom: 10px;
     display: flex;
@@ -59,7 +58,7 @@ container_{
 
 /* .profile-image-area{} */
 
-.profile-image{
+.profile-image {
     display: flex;
     background: url(generic.jpg) no-repeat;
     background-size: cover;
@@ -69,61 +68,77 @@ container_{
     box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.4);
 }
 
-.profile-name-area{
+.profile-name-area {
     padding: 5px 10px;
     border-radius: 10px 0 10px 0;
     background-color: rgb(22, 41, 56);
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
 }
 
-.profile-name{
+.profile-name {
     color: #f4f4f4;
     font-size: 16px;
     font-weight: 500;
 }
 
-.messages-area{
+.messages-area {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
-mensagem_{
+mensagem_ {
     position: relative;
     display: flex;
     justify-content: start;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     margin-left: 65px;
+    margin-right: 65px;
     gap: 15px;
 }
 
-.message-image{
+.message-image {
     display: flex;
     background: url(perfil.jpg) no-repeat;
     background-size: cover;
     border-radius: 100%;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
-
     align-self: flex-start;
     width: 50px;
     min-width: 50px;
     height: 50px;
 }
 
-.message-image.test{
+.message-image.test {
     background: url(perfil.png) no-repeat;
     background-size: cover;
 }
 
-.message-content{
+.message-content {
     padding: 5px 10px;
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(255, 255, 255, 0.6);
     border-radius: 0px 5px 5px 5px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
     font-weight: 500;
     align-self: flex-end;
+    overflow: hidden;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
 }
 
-.message-time{
+.message-content name_ {
+    font-weight: 600;
+    color: rgb(0, 0, 150);
+}
+
+.message-content name_.self {
+    color: rgb(157, 255, 0);
+}
+
+
+
+.message-time {
     position: absolute;
     bottom: -25px;
     right: 0px;
@@ -134,22 +149,27 @@ mensagem_{
     padding: 1px 3px;
 }
 
-.first{
+.first {
     margin-left: 0;
     margin-top: 40px;
 }
 
-empty{
+.middle-first {
+    margin-top: 40px;
+    margin-left: 0;
+}
+
+empty {
     width: 100%;
     min-height: 40px;
 }
 
-.input-message{
+.input-message {
     width: 80%;
     position: relative;
 }
 
-.input-message input{
+.input-message input {
     border: none;
     outline: none;
     background-color: rgba(21, 40, 55, 0.8);
@@ -162,7 +182,7 @@ empty{
     padding: 0 30px 0 10px;
 }
 
-.input-message button{
+.input-message button {
     position: absolute;
     top: 12px;
     right: 15px;
@@ -180,4 +200,21 @@ empty{
 
 .input-message input::placeholder {
     color: rgba(255, 255, 255, 0.6);
+}
+
+mensagem_.self{
+    flex-direction: row-reverse;
+    justify-content: end;
+    margin-left: 65px;
+    margin-right: 65px;
+}
+
+mensagem_.self.first{
+    margin-right: 0;
+}
+
+mensagem_.self content_{
+    background-color: rgba(22, 41, 56, .8);
+    color: white;
+    border-radius: 5px 0px 5px 5px;
 }

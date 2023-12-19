@@ -37,11 +37,14 @@
 
         </div>
 
-        <div class="chat-area">
+        <div id="chat-area" class="chat-area" onscroll="verificarRolagem()">
             <div class="messages-area" id="chatArea">
                 <mensagem_ class="first">
                     <image_ class="message-image"></image_>
-                    <content_ class="message-content">Olá</content_>
+                    <content_ class="message-content">
+                        <name_>Anderson</name_>
+                        Olá
+                    </content_>
                 </mensagem_>
                 <mensagem_>
                     <content_ class="message-content">Como você está?</content_>
@@ -70,15 +73,16 @@
                 </mensagem_>
 
 
-                <mensagem_ class="first">
+                <mensagem_ class="first self">
                     <image_ class="message-image test"></image_>
-                    <content_ class="message-content">It is a long established fact that a reader will be distracted by
+                    <content_ class="message-content">
+                        <name_ class="self">Gabriel</name_>It is a long established fact that a reader will be distracted by
                         the readable content of a page when looking at its layout.</content_>
                 </mensagem_>
-                <mensagem_>
+                <mensagem_ class="self">
                     <content_ class="message-content">Como você está?</content_>
                 </mensagem_>
-                <mensagem_>
+                <mensagem_ class="self">
                     <content_ class="message-content">It is a long established fact that a reader will be distracted by
                         the readable content of a page when looking at its layout.</content_>
                     <time_ class="message-time">08:47</time_>
